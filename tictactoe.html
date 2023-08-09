@@ -26,15 +26,18 @@
         let xTurn = true
         function play(e) {
             if (e.target.innerText == "-") {
-                if (xTurn) {
-                    e.target.innerText = "X"
-                    divTurn.innerHTML =`now it's  O turn`
-                }
-                else {
-                    e.target.innerText = "O"
-                    divTurn.innerHTML =`now it's  X turn`
-                }
+                e.target.innerText = xTurn ?"X":"O";
+                divTurn.innerHTML = xTurn ?`now it's  O turn`:`now it's  X turn`;
                 xTurn = !xTurn
+                
+                // if (xTurn) {
+                //     e.target.innerText = "X"
+                // }
+                // else {
+                //     e.target.innerText = "O"
+                // }
+
+                
             }
             checkWin()
         }
