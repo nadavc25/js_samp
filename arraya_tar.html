@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let ar=[3,6,9,2,1]
+        let ar = [3, 6, 9, 2, 1]
+        let workers = [
+            { "firstName": "John", "lastName": "Doe" },
+            { "firstName": "Anna", "lastName": "Smith" },
+            { "firstName": "Peter", "lastName": "Jones" }
+        ]
+
+        for (let index = 0; index < workers.length; index++) {
+            console.log( workers[index])
+            
+        }
         // tar 1
         // for (let index = 0; index < ar.length; index++) {
         //     console.log(ar[index]);
@@ -41,11 +53,12 @@
         // console.log(min);
 
         // tar 5
-        let odds=0
-        for (let index = 0; index < ar.length; index++) {
-             odds+= ar[index] % 2 !=0 ? 1:0
-        }
-        console.log(odds);
+        // let odds = 0
+        // for (let index = 0; index < ar.length; index++) {
+        //     odds += ar[index] % 2 != 0 ? 1 : 0
+        // }
+        // console.log(odds);
     </script>
 </body>
+
 </html>
