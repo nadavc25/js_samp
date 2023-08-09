@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ar=[3,6,9,2,1]
+        // tar 1
+        // for (let index = 0; index < ar.length; index++) {
+        //     console.log(ar[index]);
+        // }
+
+        // tar2
+        // for (let index = ar.length; index >= 0; index--) {
+        //     console.log(ar[index]);
+        // }
+
+
+        // tar 3
+        // let sum=0
+        // for (let index = 0; index < ar.length; index++) {
+        //     sum +=ar[index]
+        // }
+        // console.log(sum);
+
+        // tar 4
+        // let max=ar[0]
+        // for (let index = 0; index < ar.length; index++) {
+        //      max= ar[index] > max ? ar[index]:max
+        // }
+        // console.log(max);
+
+        // tar 5
+        // let min=ar[0]
+        // for (let index = 0; index < ar.length; index++) {
+        //      min= ar[index] < min ? ar[index]:min
+        // }
+        // console.log(min);
+
+        // tar 5
+        let odds=0
+        for (let index = 0; index < ar.length; index++) {
+             odds+= ar[index] % 2 !=0 ? 1:0
+        }
+        console.log(odds);
+    </script>
+</body>
+</html>
